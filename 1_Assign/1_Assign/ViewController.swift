@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         let label = UILabel(frame: CGRect(x:70, y:150, width:300, height:60))
         
         label.textColor = .gray
-        label.text = "사용하던 카카오계정이 있다면 \n 이메일 또는 전화번호로 로그인해 주세요."
+        label.text = "사용하던 카카오계정이 있다면\n이메일 또는 전화번호로 로그인해 주세요."
         label.numberOfLines = 0
         label.font = .boldSystemFont(ofSize: 15)
         return label
