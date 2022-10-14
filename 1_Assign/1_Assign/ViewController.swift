@@ -26,9 +26,6 @@ class ViewController: UIViewController {
         label.numberOfLines = 0
         label.textAlignment = .center
         label.font = .boldSystemFont(ofSize: 15)
-//        label.sizeToFit()
-        // font size 15인데 13 초과로 쓰면 잘린다.. 왜지?
-        // 텍스트크기가 뷰의 너비를 초과할 경우 잘린다고 한다! 그럼 width(leading trailing)이 문제인가?
         return label
     }()
     
@@ -103,7 +100,6 @@ class ViewController: UIViewController {
         pwTextField.snp.makeConstraints {
             $0.top.equalTo(self.idTextField.snp.bottom).offset(10)
             $0.leading.trailing.equalTo(self.view.safeAreaLayoutGuide).inset(21)
-            //self.idTextField랑 leading trailing 하고싶은데 어떻게 할 수 있을지
             $0.height.equalTo(49)
         }
         

@@ -50,7 +50,6 @@ class Friend1ViewController: UIViewController {
         setImgView.snp.makeConstraints {
             $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(13)
             $0.leading.equalTo(self.friendLabel.snp.trailing).offset(4)
-            // 이부분 유념!
             $0.width.equalTo(21)
             $0.height.equalTo(21)
         }
