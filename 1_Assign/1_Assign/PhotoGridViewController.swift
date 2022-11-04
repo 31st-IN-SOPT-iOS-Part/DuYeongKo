@@ -26,7 +26,7 @@ class PhotoGridViewController: UIViewController {
     
     lazy var plusButton:UIButton = {
         let button = UIButton()
-        button.addTarget(self, action: #selector(touchupPhotoButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(touchupGalleryButton), for: .touchUpInside)
         return button
     }()
     
@@ -140,15 +140,15 @@ extension PhotoGridViewController {
         plusButton.setBackgroundImage(UIImage(named: "iconPlus"), for: .normal)
     }
     
-    private func presentToPhotoVC(){
-        let PhotoVC = PhotoCollectionViewController()
-        PhotoVC.modalPresentationStyle = .fullScreen
-        self.present(PhotoVC, animated: true, completion: nil)
+    private func presentToGalleryVC(){
+        let GalleryVC = GalleryCollectionViewController()
+        GalleryVC.modalPresentationStyle = .fullScreen
+        self.present(GalleryVC, animated: true, completion: nil)
     }
     
     @objc
-    private func touchupPhotoButton(){
-        presentToPhotoVC()
+    private func touchupGalleryButton(){
+        presentToGalleryVC()
     }
 }
 

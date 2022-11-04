@@ -18,8 +18,10 @@
 		9828004A290FA4B900FDAE29 /* SwiftyColor in Frameworks */ = {isa = PBXBuildFile; productRef = 98280049290FA4B900FDAE29 /* SwiftyColor */; };
 		9828004C290FB07600FDAE29 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828004B290FB07600FDAE29 /* FriendTableViewCell.swift */; };
 		9828004F290FB09300FDAE29 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 9828004E290FB09300FDAE29 /* Then */; };
-		982800532914D98A00FDAE29 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982800522914D98A00FDAE29 /* PhotoCollectionViewController.swift */; };
+		982800532914D98A00FDAE29 /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982800522914D98A00FDAE29 /* GalleryCollectionViewController.swift */; };
 		982800552914DE8400FDAE29 /* ChatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982800542914DE8400FDAE29 /* ChatCollectionViewCell.swift */; };
+		982800572914F05300FDAE29 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982800562914F05300FDAE29 /* GalleryModel.swift */; };
+		982800592914F7B900FDAE29 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982800582914F7B900FDAE29 /* GalleryCollectionViewCell.swift */; };
 		9828FF9D28EF101500FDAE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828FF9C28EF101500FDAE29 /* AppDelegate.swift */; };
 		9828FF9F28EF101500FDAE29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828FF9E28EF101500FDAE29 /* SceneDelegate.swift */; };
 		9828FFA128EF101500FDAE29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828FFA028EF101500FDAE29 /* ViewController.swift */; };
@@ -40,8 +42,10 @@
 		98280041290F906B00FDAE29 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		98280046290FA39800FDAE29 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		9828004B290FB07600FDAE29 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
-		982800522914D98A00FDAE29 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		982800522914D98A00FDAE29 /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
 		982800542914DE8400FDAE29 /* ChatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewCell.swift; sourceTree = "<group>"; };
+		982800562914F05300FDAE29 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
+		982800582914F7B900FDAE29 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		9828FF9928EF101500FDAE29 /* 1_Assign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1_Assign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9828FF9C28EF101500FDAE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9828FF9E28EF101500FDAE29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,11 +100,13 @@
 				9828FFB228F04EA000FDAE29 /* ThirdViewController.swift */,
 				9828000228F98CD100FDAE29 /* MyProfileViewController.swift */,
 				98280046290FA39800FDAE29 /* FriendModel.swift */,
+				982800562914F05300FDAE29 /* GalleryModel.swift */,
 				9828FFFD28F6F93C00FDAE29 /* FriendListViewController.swift */,
 				9828004B290FB07600FDAE29 /* FriendTableViewCell.swift */,
 				9828003B290F902D00FDAE29 /* PhotoGridViewController.swift */,
 				982800542914DE8400FDAE29 /* ChatCollectionViewCell.swift */,
-				982800522914D98A00FDAE29 /* PhotoCollectionViewController.swift */,
+				982800522914D98A00FDAE29 /* GalleryCollectionViewController.swift */,
+				982800582914F7B900FDAE29 /* GalleryCollectionViewCell.swift */,
 				9828003D290F904700FDAE29 /* SharpViewController.swift */,
 				9828003F290F905B00FDAE29 /* ShopViewController.swift */,
 				98280041290F906B00FDAE29 /* MoreViewController.swift */,
@@ -200,12 +206,14 @@
 				9828000328F98CD100FDAE29 /* MyProfileViewController.swift in Sources */,
 				9828FFA128EF101500FDAE29 /* ViewController.swift in Sources */,
 				9828FFB328F04EA000FDAE29 /* ThirdViewController.swift in Sources */,
+				982800592914F7B900FDAE29 /* GalleryCollectionViewCell.swift in Sources */,
 				98280047290FA39800FDAE29 /* FriendModel.swift in Sources */,
 				9828003C290F902D00FDAE29 /* PhotoGridViewController.swift in Sources */,
 				9828003A290F8B3000FDAE29 /* KakaoTabbarController.swift in Sources */,
-				982800532914D98A00FDAE29 /* PhotoCollectionViewController.swift in Sources */,
+				982800532914D98A00FDAE29 /* GalleryCollectionViewController.swift in Sources */,
 				98280042290F906B00FDAE29 /* MoreViewController.swift in Sources */,
 				9828FF9D28EF101500FDAE29 /* AppDelegate.swift in Sources */,
+				982800572914F05300FDAE29 /* GalleryModel.swift in Sources */,
 				9828FF9F28EF101500FDAE29 /* SceneDelegate.swift in Sources */,
 				982800552914DE8400FDAE29 /* ChatCollectionViewCell.swift in Sources */,
 				9828004C290FB07600FDAE29 /* FriendTableViewCell.swift in Sources */,
