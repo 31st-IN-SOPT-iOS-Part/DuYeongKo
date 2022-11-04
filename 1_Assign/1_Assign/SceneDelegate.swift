@@ -23,10 +23,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 let window = UIWindow(windowScene: windowScene)
                 window.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
                 
-                let rootVC = ViewController()
+                // 일단 친구화면에서 시작하도록 설정함
+                let rootVC = FriendListViewController()
                 let navigationController = UINavigationController(rootViewController: rootVC)
+
+//                window.rootViewController = navigationController
                 
-                window.rootViewController = navigationController
+                window.rootViewController = KakaoTabbarController()
+                
                 window.makeKeyAndVisible()
                 self.window = window
             }

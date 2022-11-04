@@ -1,13 +1,12 @@
 //
-//  Friend2ViewController.swift
+//  MyProfileViewController.swift
 //  1_Assign
 //
 //  Created by 고두영 on 2022/10/14.
 //
 
 import UIKit
-
-class Friend2ViewController: UIViewController {
+class MyProfileViewController: UIViewController {
     
     let closeImgView = UIImageView()
     let picImgView = UIImageView()
@@ -98,8 +97,6 @@ class Friend2ViewController: UIViewController {
             $0.leading.trailing.equalTo(self.view.safeAreaLayoutGuide).inset(164)
         }
         
-        // 구분선은 어떻게 구현하는지 모르겠다.. 추후 구현할 것
-        
         view.addSubview(firstClearButton)
         firstClearButton.snp.makeConstraints {
             $0.top.equalTo(self.nameLabel.snp.bottom).offset(53)
@@ -183,7 +180,7 @@ class Friend2ViewController: UIViewController {
     }
     
     private func presentToFriend1VC(){
-        let friend1VC = Friend1ViewController()
+        let friend1VC = FriendListViewController()
         friend1VC.modalPresentationStyle = .fullScreen
         self.present(friend1VC, animated: true, completion: nil)
     }

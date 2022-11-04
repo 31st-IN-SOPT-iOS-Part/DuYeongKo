@@ -52,7 +52,7 @@ class ThirdViewController: UIViewController {
     }
     
     private func presentToFriend1VC(){
-        let Friend1VC = Friend1ViewController()
+        let Friend1VC = FriendListViewController()
         Friend1VC.modalPresentationStyle = .fullScreen
         self.present(Friend1VC, animated: true, completion: nil)
     }
